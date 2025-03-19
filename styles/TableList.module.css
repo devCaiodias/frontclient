@@ -1,0 +1,84 @@
+.div_table {
+    overflow-x: auto;
+
+}
+
+.table_ {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    color: white;
+}
+
+.table_ thead {
+    padding-bottom: 10px;
+}
+
+.table_ th {
+    font-weight: bold;
+    padding: 20px;
+}
+
+.table_ td {
+    padding: 10px;
+    text-align: center;
+}
+
+.btn {
+    background: transparent;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    color: white;
+}
+
+.btn_isactive {
+    background-color: #F23078;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.btn_isactive:hover {
+    background: transparent;
+    border: 2px solid #F2D98D;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+
+.btn_isoff {
+    background: transparent;
+    border: 2px solid #F2D98D;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.btn_isoff:hover {
+    background-color: #F23078;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.btn_update {
+    border: 2px solid #F27999;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    background: none;
+    color: white;
+}
+
+.btn_delete {
+    border: 2px solid rgb(236, 76, 76);
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    background: none;
+    color: white;
+}
