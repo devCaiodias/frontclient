@@ -28,7 +28,7 @@ export default function TableList({handleOpen, search, setTableData, tableData}:
         const comfirmeDelete = window.confirm('Are you sure you want to delete this client')
         if (comfirmeDelete) {
             try {
-                await axios.delete(`http://localhost:8000/api/clients/${id}`)
+                await axios.delete(`https://backend-client-qybq.onrender.com/api/clients/${id}`)
                 setTableData((prevData: any) => prevData.filter((client: Client) => client.id !== id))
             } catch (err: any) {
                 console.error(err.message)

@@ -24,7 +24,7 @@ export default function Home() {
 
     const fechClient = async () => {
         try {
-            const response = await axios.get("http://localhost:8000/api/clients/")
+            const response = await axios.get("https://backend-client-qybq.onrender.com/api/clients/")
             setTableData(response.data)
         } catch (err: any) {
             console.log(err?.message || "Ocorreu um erro ao buscar os dados.");
@@ -44,7 +44,7 @@ export default function Home() {
   const handleSubmit = async (newClientData: any) => {
     if (modalMode === 'add') {
       try {
-        const response = await axios.post("http://localhost:8000/api/clients/", newClientData);
+        const response = await axios.post("https://backend-client-qybq.onrender.com/api/clients/", newClientData);
         console.log('Client added:', response.data);
         setTableData((prevData) => [...prevData, response.data]);
       } catch (err) {
@@ -55,7 +55,7 @@ export default function Home() {
 
       console.log('Updating client with ID:', clientData.id);
       try {
-        const response = await axios.put(`http://localhost:8000/api/clients/${clientData.id}`, newClientData);
+        const response = await axios.put(`https://backend-client-qybq.onrender.com/api/clients/${clientData.id}`, newClientData);
         console.log('Client updated:', response.data);
         setTableData((prevData) =>
           prevData.map((client) => (client.id === clientData.id ? response.data : client))
